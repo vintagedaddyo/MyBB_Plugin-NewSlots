@@ -1,6 +1,6 @@
 License is GNU/GPL attached inside documentation folder.  
 
-Plugin Name: MYPS Slots
+Plugin Name: New Slots
 Plugin Author: Jesse Labrocca & edits by Vintagedaddyo
 Plugin Website:  http://www.MybbCentral.com
 Plugin Version: 1.3
