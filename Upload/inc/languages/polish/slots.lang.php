@@ -31,7 +31,7 @@ $l['slots_marquee_no_win'] = '<span style="color: #0068AF;">AHAHAHA, dobra prób
 
 $l['slots_marquee_win'] = '<span style="color: #008000;">ZWYCIĘZCA - ZWYCIĘZCA - ZWYCIĘZCA</span>';
 
-$l['slots_marquee_spin'] = '<span style="color: #F50000;">Naciśnij SPIN, aby zaryzykować swoją gotówkę.</span>';
+$l['slots_marquee_spin'] = '<span style="color: #F50000;">Naciśnij Obracać, aby zaryzykować swoją gotówkę.</span>';
 
 // breadcrumb
 
