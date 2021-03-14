@@ -51,7 +51,7 @@ $l['slots_page_3'] = 'Automat xTreme';
 
 $l['slots_youhave'] = 'Ty masz';
 
-// you have
+// spin cost
 
 $l['slots_spincost'] = 'Każdy obrót kosztuje';
 

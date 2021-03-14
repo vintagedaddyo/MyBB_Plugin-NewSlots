@@ -51,7 +51,7 @@ $l['slots_page_3'] = 'Máquina tragamonedas xTreme';
 
 $l['slots_youhave'] = 'Tú tienes';
 
-// you have
+// spin cost
 
 $l['slots_spincost'] = 'Cada giro cuesta';
 

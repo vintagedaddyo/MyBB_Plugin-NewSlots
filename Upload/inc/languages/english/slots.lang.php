@@ -21,7 +21,7 @@ $l['slots_page_3'] = 'xTreme Slot Machine';
 
 $l['slots_youhave'] = 'You have';
 
-// you have
+// spin cost
 
 $l['slots_spincost'] = 'Each spin costs';
 
