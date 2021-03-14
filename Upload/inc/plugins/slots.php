@@ -102,7 +102,7 @@ global $db, $mybb, $cache, $templates, $lang;
 	</div>
 </div>
 	<div style=\"font-weight: bold; width: 300px; background: #000000;\">
-	     <marquee>{\$marquee}</marquee>
+	     <marquee onmouseover=\"this.setAttribute(\'scrollamount\', \'3\')\" onmouseout=\"this.setAttribute(\'scrollamount\', \'6\')\" scrolldelay=\"9\" direction=\"left\">{\$marquee}</marquee>
 	<span style=\"color: #B5B5B5;font-weight: bold;\">{\$lang->slots_youhave}</span> <span style=\"color: #CD411B;font-weight: bold;\">{\$money}</span> <span style=\"color: #B5B5B5;font-weight: bold;\">{\$mybb->settings[\'newpoints_main_curname\']}.</span>	
 	</div>
 <div style=\"background: #303030; width:300px; height:80px; border-top: 2px solid #0F0F0F; border-bottom: 2px solid #0F0F0F;color: #E8E8E8;\">
