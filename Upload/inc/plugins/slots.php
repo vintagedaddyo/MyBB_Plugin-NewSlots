@@ -124,17 +124,13 @@ global $db, $mybb, $cache, $templates, $lang;
 </body>
 </html>",
 		"sid"		=> "-1",
-		"version"	=> "1.0",
+		"version"	=> "1.1",
 		"dateline"	=> time()
 	);
 
 	$db->insert_query("templates", $slots_template_1);
 
 	require "../inc/adminfunctions_templates.php";
-
-	//global $db, $mybb, $templates, $lang;
-
-    $lang->load("slots");	
 
 	find_replace_templatesets("header", '#toplinks_help}</a></li>#', 'toplinks_help}</a></li> <li><a href="{$mybb->settings[\'bburl\']}/slots.php" class="slots">{\$lang->slots_link}</a></li><style>#logo ul.top_links a.slots {background: url(\'images/toplinks/slots.png\') no-repeat;}</style>');
 
