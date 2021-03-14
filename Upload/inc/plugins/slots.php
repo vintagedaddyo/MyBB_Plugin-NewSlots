@@ -96,9 +96,9 @@ global $db, $mybb, $cache, $templates, $lang;
 <div align=\"center\">
 <div style=\"background: #fff url({\$mybb->settings[\'bburl\']}/images/slots/slotback.png);width:300px; height:280px;\">
 	<div style=\"position:relative; top: 200px; width: 300px;\">
-	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot1}.png\" style=\"margin:5px 0;\">
-	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot2}.png\" style=\"margin:5px 20px;\">
-	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot3}.png\" style=\"margin:5px 0;\">
+	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot1}.png\" style=\"margin:7px 0;\">
+	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot2}.png\" style=\"margin:7px 20px;\">
+	<img src=\"{\$mybb->settings[\'bburl\']}/images/slots/slot{\$slot3}.png\" style=\"margin:7px 0;\">
 	</div>
 </div>
 	<div style=\"font-weight: bold; width: 300px;\">
