@@ -3,7 +3,7 @@ License is GNU/GPL attached inside documentation folder.
 Plugin Name: MYPS Slots
 Plugin Author: Jesse Labrocca & edits by Vintagedaddyo
 Plugin Website:  http://www.MybbCentral.com
-Plugin Version: 1.2
+Plugin Version: 1.3
 Plugin Mybb Compatibility: 1.8
 Plugin File Edits: None
 Plugin File Uploads: 10 php, 10 images, 1 mp3, 1 ogg, 1 wav

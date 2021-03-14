@@ -17,7 +17,7 @@ $l['slots_author'] = 'Jesse Labrocca & edits by Vintagedaddyo';
 
 $l['slots_authorsite'] = 'http://www.mybbcentral.com';
 
-$l['slots_version'] = '1.2';
+$l['slots_version'] = '1.3';
 
 $l['slots_compatibility'] = '18*';
 
