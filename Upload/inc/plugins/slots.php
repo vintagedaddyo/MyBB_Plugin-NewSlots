@@ -103,16 +103,16 @@ global $db, $mybb, $cache, $templates, $lang;
 </div>
 	<div style=\"font-weight: bold; width: 300px;\">
 	     <marquee>{\$marquee}</marquee>
-	{\$lang->slots_youhave} {\$money} {\$mybb->settings[\'newpoints_main_curname\']}.	
+	<span style=\"color: #2E2E2E;font-weight: bold;\">{\$lang->slots_youhave}</span> <span style=\"color: #CD411B;font-weight: bold;\">{\$money}</span> <span style=\"color: #2E2E2E;font-weight: bold;\">{\$mybb->settings[\'newpoints_main_curname\']}.</span>	
 	</div>
-<div style=\"background: #999999; width:280px; height:80px; border: 2px solid #666666;\">
+<div style=\"background: #303030; width:280px; height:80px; border: 2px solid #0F0F0F;color: #E8E8E8;\">
 	<form method=\"post\" action=\"slots.php\">
 		<div style=\"margin-top:10px;\">
 			<input type=\"hidden\" name=\"play\" value=\"1\" />
 
 			<button style=\"background: #0f0f0f url(\'{\$mybb->settings[\'bburl\']}/images/slots/spin.png\')repeat-x;color:#fff;font-size:24px;font-weight:bold;text-transform:uppercase;\">{\$lang->slots_spin}</button>			
 <br />
-{\$lang->slots_spincost} {\$mybb->settings[\'slots_credit\']} {\$mybb->settings[\'newpoints_main_curname\']}.
+{\$lang->slots_spincost} <span style=\"color: #FDCE65;font-weight: bold;\">{\$mybb->settings[\'slots_credit\']}</span> {\$mybb->settings[\'newpoints_main_curname\']}.
 		</div>
 	</form>
 </div>

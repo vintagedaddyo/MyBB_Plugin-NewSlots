@@ -27,7 +27,7 @@ $l['slots_spincost'] = 'Each spin costs';
 
 // marquee
 
-$l['slots_marquee_no_win'] = '<span style="color: #0068AF;">AHAHAHA, Good Try.</span>';
+$l['slots_marquee_no_win'] = '<span style="color: #BC3FB7;">AHAHAHA, Good Try.</span>';
 
 $l['slots_marquee_win'] = '<span style="color: #008000;">WINNER - WINNER - WINNER</span>';
 
