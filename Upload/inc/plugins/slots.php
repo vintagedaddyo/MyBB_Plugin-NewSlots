@@ -109,7 +109,8 @@ global $db, $mybb, $cache, $templates, $lang;
 	<form method=\"post\" action=\"slots.php\">
 		<div style=\"margin-top:10px;\">
 			<input type=\"hidden\" name=\"play\" value=\"1\" />
-			<input type=\"image\" src=\"{\$mybb->settings[\'bburl\']}/images/slots/spin.gif\" value=\"submit\" />
+
+			<button style=\"background: #0f0f0f url(\'{\$mybb->settings[\'bburl\']}/images/slots/spin.png\')repeat-x;color:#fff;font-size:24px;font-weight:bold;text-transform:uppercase;\">{\$lang->slots_spin}</button>			
 <br />
 {\$lang->slots_spincost} {\$mybb->settings[\'slots_credit\']} {\$mybb->settings[\'newpoints_main_curname\']}.
 		</div>

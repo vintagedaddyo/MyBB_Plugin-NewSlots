@@ -75,4 +75,8 @@ $l['slots_error_p1'] = 'Sorry but you do not have enough';
 
 $l['slots_error_p2'] = 'to play.';
 
+// spin button
+
+$l['slots_spin'] = 'Spin';
+
 ?>
