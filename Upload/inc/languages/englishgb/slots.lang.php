@@ -27,11 +27,11 @@ $l['slots_spincost'] = 'Each spin costs';
 
 // marquee
 
-$l['slots_marquee_no_win'] = 'AHAHAHA, Good Try.';
+$l['slots_marquee_no_win'] = '<span style="color: #0068AF;">AHAHAHA, Good Try.</span>';
 
-$l['slots_marquee_win'] = 'WINNER - WINNER - WINNER';
+$l['slots_marquee_win'] = '<span style="color: #008000;">WINNER - WINNER - WINNER</span>';
 
-$l['slots_marquee_spin'] = 'Press SPIN to risk your cash.';
+$l['slots_marquee_spin'] = '<span style="color: #F50000;">Press SPIN to risk your cash.</span>';
 
 // breadcrumb
 
