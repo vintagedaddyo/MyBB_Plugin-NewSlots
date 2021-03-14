@@ -14,7 +14,7 @@ if(!defined('IN_MYBB'))
 
 //PLUGIN HOOKS
 
-// $plugins->add_hook("postbit", "slots");
+ $plugins->add_hook("global_start", "slots");
 
 // The information that shows up on the plugin manager
 
@@ -79,7 +79,7 @@ global $db, $mybb, $cache, $templates, $lang;
 <head>
 <meta http-equiv=\"Pragma\" content=\"no-cache\" />
 <meta http-equiv=\"expires\" content=\"0\" />
-<title>{\$mybb->settings[\'bbname\']} - ".$lang->slots_page_1."</title>
+<title>{\$mybb->settings[\'bbname\']} - {\$lang->slots_page_1}</title>
 {\$headerinclude}
 </head>
 <body>
@@ -89,7 +89,7 @@ global $db, $mybb, $cache, $templates, $lang;
 <input type=\"hidden\" name=\"action\" value=\"send\" />
 <table border=\"0\" cellspacing=\"{\$theme[\'borderwidth\']}\" cellpadding=\"{\$theme[\'tablespace\']}\" class=\"tborder\">
 <tr>
-<td class=\"thead\"><strong>".$lang->slots_page_2."</strong></td>
+<td class=\"thead\"><strong>{\$lang->slots_page_2}</strong></td>
 </tr>
 <tr>
 <td class=\"trow1\" width=\"100%\"> 
@@ -103,7 +103,7 @@ global $db, $mybb, $cache, $templates, $lang;
 </div>
 	<div style=\"font-weight: bold; width: 300px;\">
 	     <marquee>{\$marquee}</marquee>
-	".$lang->slots_youhave." {\$money} {\$mybb->settings[\'newpoints_main_curname\']}.	
+	{\$lang->slots_youhave} {\$money} {\$mybb->settings[\'newpoints_main_curname\']}.	
 	</div>
 <div style=\"background: #999999; width:280px; height:80px; border: 2px solid #666666;\">
 	<form method=\"post\" action=\"slots.php\">
@@ -111,7 +111,7 @@ global $db, $mybb, $cache, $templates, $lang;
 			<input type=\"hidden\" name=\"play\" value=\"1\" />
 			<input type=\"image\" src=\"{\$mybb->settings[\'bburl\']}/images/slots/spin.gif\" value=\"submit\" />
 <br />
-".$lang->slots_spincost." {\$mybb->settings[\'slots_credit\']} {\$mybb->settings[\'newpoints_main_curname\']}.
+{\$lang->slots_spincost} {\$mybb->settings[\'slots_credit\']} {\$mybb->settings[\'newpoints_main_curname\']}.
 		</div>
 	</form>
 </div>
@@ -132,7 +132,11 @@ global $db, $mybb, $cache, $templates, $lang;
 
 	require "../inc/adminfunctions_templates.php";
 
-	find_replace_templatesets("header", '#toplinks_help}</a></li>#', 'toplinks_help}</a></li> <li><a href="{$mybb->settings[\'bburl\']}/slots.php" class="slots">'.$lang->slots_link.'</a></li><style>#logo ul.top_links a.slots {background: url(\'images/toplinks/slots.png\') no-repeat;}</style>');
+	//global $db, $mybb, $templates, $lang;
+
+    $lang->load("slots");	
+
+	find_replace_templatesets("header", '#toplinks_help}</a></li>#', 'toplinks_help}</a></li> <li><a href="{$mybb->settings[\'bburl\']}/slots.php" class="slots">{\$lang->slots_link}</a></li><style>#logo ul.top_links a.slots {background: url(\'images/toplinks/slots.png\') no-repeat;}</style>');
 
     rebuild_settings();
 
@@ -159,7 +163,7 @@ function slots_deactivate()
 
 	require "../inc/adminfunctions_templates.php";
 
-	find_replace_templatesets("header", '#'.preg_quote(' <li><a href="{$mybb->settings[\'bburl\']}/slots.php" class="slots">'.$lang->slots_link.'</a></li><style>#logo ul.top_links a.slots {background: url(\'images/toplinks/slots.png\') no-repeat;}</style>').'#', '',0);
+	find_replace_templatesets("header", '#'.preg_quote(' <li><a href="{$mybb->settings[\'bburl\']}/slots.php" class="slots">{$lang->slots_link}</a></li><style>#logo ul.top_links a.slots {background: url(\'images/toplinks/slots.png\') no-repeat;}</style>').'#', '',0);
 
     rebuild_settings();
 }
