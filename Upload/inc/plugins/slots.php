@@ -110,7 +110,7 @@ global $db, $mybb, $cache, $templates, $lang;
 		<div style=\"margin-top:10px;\">
 			<input type=\"hidden\" name=\"play\" value=\"1\" />
 
-			<button style=\"background: #0f0f0f url(\'{\$mybb->settings[\'bburl\']}/images/slots/spin.png\')repeat-x;color:#fff;font-size:24px;font-weight:bold;text-transform:uppercase;\">{\$lang->slots_spin}</button>			
+			<button style=\"background: #0f0f0f url(\'{\$mybb->settings[\'bburl\']}/images/slots/spin.png\')repeat-x;color:#fff;font-size:24px;font-weight:bold;text-transform:uppercase;margin-bottom:5px;\">{\$lang->slots_spin}</button>			
 <br />
 {\$lang->slots_spincost} <span style=\"color: #FDCE65;font-weight: bold;\">{\$mybb->settings[\'slots_credit\']}</span> {\$mybb->settings[\'newpoints_main_curname\']}.
 		</div>
