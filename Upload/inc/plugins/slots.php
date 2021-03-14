@@ -105,7 +105,7 @@ global $db, $mybb, $cache, $templates, $lang;
 	     <marquee>{\$marquee}</marquee>
 	<span style=\"color: #2E2E2E;font-weight: bold;\">{\$lang->slots_youhave}</span> <span style=\"color: #CD411B;font-weight: bold;\">{\$money}</span> <span style=\"color: #2E2E2E;font-weight: bold;\">{\$mybb->settings[\'newpoints_main_curname\']}.</span>	
 	</div>
-<div style=\"background: #303030; width:280px; height:80px; border: 2px solid #0F0F0F;color: #E8E8E8;\">
+<div style=\"background: #303030; width:300px; height:80px; border: 2px solid #0F0F0F;color: #E8E8E8;\">
 	<form method=\"post\" action=\"slots.php\">
 		<div style=\"margin-top:10px;\">
 			<input type=\"hidden\" name=\"play\" value=\"1\" />
